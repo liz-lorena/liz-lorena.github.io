@@ -1,0 +1,714 @@
+
+
+html {
+   --text-color: black;
+   --header-color: black;
+   --main-link-color: rgb(227, 57, 109);
+   --projects-background-color: #181A1B;
+   --text-background-color: #F6F6F6;
+   --heading-background-color: #fafafa;
+   --border-color: #dddddd;
+   --purple-link-color: rgb(103, 85, 230);
+   --green-link-color: rgb(9, 192, 181);
+   --highlight-color: white;
+}
+
+::-moz-selection {
+   /* Code for Firefox */
+   color: var(--highlight-color);
+   background: var(--main-link-color);
+}
+
+::selection {
+   color: var(--highlight-color);
+   background: var(--main-link-color);
+}
+
+a {
+   font-family: sans-serif;
+   font-size: 18pt;
+   color: var(--main-link-color);
+}
+
+body {
+   background: var(--projects-background-color);
+   /*background: linear-gradient(-90deg, #FAB4C5, #E0245E);
+	background-size: 200% 200%;
+	-webkit-animation: Gradient 5s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+	animation: Gradient 5s ease infinite;*/
+}
+
+email::before {
+   content: "lys@irisoflys.com";
+}
+
+
+/*
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+*/
+
+strong {
+   font-weight: bold!important;
+}
+
+div#links a {
+   color: var(--main-link-color);
+   border: 1px var(--main-link-color) solid;
+   border-radius: 0px;
+   padding: 15px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-family: sans-serif;
+   opacity: 1;
+   display: block;
+   text-align: center;
+   margin: 20px;
+   background-color: var(--text-background-color);
+   -webkit-transition: .3s;
+   /* Safari */
+   transition: .3s;
+}
+
+div#links a.post:hover {
+   /*padding:0px!important;*/
+}
+
+span.green,
+span.red,
+span.purple {
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-family: sans-serif;
+   font-size: 12pt;
+}
+
+div#links a.green {
+   color: var(--green-link-color);
+   border: 1px var(--green-link-color) solid;
+}
+
+span.green {
+   color: var(--green-link-color);
+}
+
+div#links a.green:hover {
+   color: var(--highlight-color);
+   border: 1px var(--highlight-color) solid;
+   background-color: var(--green-link-color);
+}
+
+div#links a.red {
+   color: var(--main-link-color);
+   border: 1px var(--main-link-color) solid;
+}
+
+span.red {
+   color: var(--main-link-color);
+}
+
+div#links a.red:hover {
+   color: var(--highlight-color);
+   border: 1px var(--highlight-color) solid;
+   background-color: var(--main-link-color);
+}
+
+div#links a.purple {
+   color: var(--purple-link-color);
+   border: 1px var(--purple-link-color) solid;
+}
+
+span.purple {
+   color: var(--purple-link-color);
+}
+
+div#links a.purple:hover {
+   color: var(--highlight-color);
+   border: 1px var(--highlight-color) solid;
+   background-color: var(--purple-link-color);
+}
+
+a:hover,
+a:focus,
+a:active {
+   color: var(--main-link-color);
+   /*opacity: .8;*/
+   text-decoration: none;
+}
+
+#links {
+   margin: 0 auto;
+   width: 100%;
+   /*padding-bottom:30px;*/
+}
+
+#s-m-t-tooltip {
+   background-color: var(--text-background-color);
+   border: 1px solid var(--border-color);
+   color: var(--text-color);
+   padding: 4px 8px 4px 8px;
+   font-family: sans-serif;
+   letter-spacing: 1px;
+   font-weight: normal;
+   font-size: 11px;
+   /*text-transform: uppercase;*/
+   margin-top: 10px;
+}
+
+#top,
+#bottom {
+   background-color: var(--text-background-color);
+   padding: 10px 0px 15px 0px;
+   border-radius: 0px;
+   border-bottom: 2px solid var(--border-color);
+   border-top: 2px solid var(--border-color);
+   width: 100%;
+}
+
+
+/*#bottom {
+	display: visible;
+}*/
+
+#status p.stuff,
+#about p.stuff,
+div.stuff p,
+div.stuff li {
+   color: var(--text-color);
+   font-size: 12pt;
+   font-family: sans-serif;
+   line-height: 145%;
+}
+
+
+/*div#title::after {
+	content:" ";
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 13px solid #dddddd;
+	height: 0px;
+	width: 0px;
+	margin-left: 50%;
+	margin-top: 0px;
+	display: block;
+}*/
+
+div#title,
+#status p.stuff,
+#about p.stuff,
+div.stuff {
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+div.stuff p,
+div.stuff li {
+   padding-top: 20px;
+}
+
+#status {
+   width: 100%;
+}
+
+#about {
+   width: 100%;
+}
+
+div#title h1,
+div.stuff h2,
+div.stuff h3,
+div.stuff h4 {
+   background-color: var(--heading-background-color);
+   border: 1px solid var(--border-color);
+   color: var(--header-color);
+   padding: 10px;
+   font-family: sans-serif;
+   letter-spacing: 1px;
+   font-weight: 100;
+   font-size: 20pt;
+   margin-top: 20px;
+   text-align: center;
+}
+
+div#title h1 {
+   font-size: 26pt;
+   margin-top: 10px;
+}
+
+div.stuff h2 {
+   font-size: 24pt;
+}
+
+div.stuff h3 {
+   font-size: 22pt;
+}
+
+a.nav {
+   color: var(--text-color);
+   width: 35px;
+   transition: all .3s;
+   display: inline-block;
+}
+
+p.stuff a,
+div.stuff a {
+   color: var(--main-link-color);
+   transition: .3s;
+}
+
+p.stuff a:hover,
+div.stuff a:hover {
+   color: var(--main-link-color);
+   text-decoration: underline;
+}
+
+a.nav:hover,
+a.nav:focus {
+   color: var(--main-link-color);
+}
+
+em {
+   font-style: italic !important;
+}
+
+#links.portfolio {
+   width: 100%!important;
+}
+
+#links.portfolio a {
+   border: 1px solid var(--main-link-color);
+}
+
+p.caption {
+   text-align: center;
+}
+
+.flip-box-back p {
+   padding-bottom: 20px;
+   text-transform: none;
+   font-family: sans-serif;
+   line-height: 145%;
+   font-size: 16pt;
+   font-family: sans-serif;
+   font-weight: normal;
+   letter-spacing: 0;
+}
+
+.flip-box-back p.excerpt {
+   text-align: left;
+}
+
+.flip-box-back p.title {
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+
+
+/* Style the back side */
+
+.flip-box-back {
+   padding-top: 35px;
+   color: var(--header-color);
+}
+
+#status p.stuff,
+#about p.stuff,
+div.stuff p,
+div.stuff li {
+   font-size: 18pt;
+}
+
+div.stuff span,
+#links {
+   font-size: 18pt;
+}
+
+div.stuff img,
+div.stuff iframe,
+div.stuff video {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-box.logo {
+   background-color: var(--projects-background-color);
+   width: 510px;
+   height: 510px;
+   perspective: 2000px;
+   /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-box-inner.logo {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-box:hover .flip-box-inner.logo {
+   transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-box-front.logo,
+.flip-box-back.logo {
+   border: 1px solid var(--main-link-color);
+   background-color: var(--text-background-color);
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   /* Safari */
+   backface-visibility: hidden;
+}
+
+
+/* Style the front side */
+
+.flip-box-front.logo {
+   padding: 18px;
+}
+
+
+/* Style the back side */
+
+.flip-box-back.logo {
+   padding: 50px;
+   transform: rotateY(180deg);
+}
+
+.flip-box.logo {
+   width: 140px;
+   height: 140px;
+   padding: 0;
+   background-color: transparent;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.flip-box-inner.logo {
+   width: 140px;
+   height: 140px;
+}
+
+.flip-box-front.logo {
+   padding: 0px;
+   border-radius: 100%;
+   border: none;
+   background: transparent;
+}
+
+.flip-box-back.logo {
+   border: none;
+   padding: 0;
+   background: transparent;
+}
+
+#status img {
+   border-radius: 50%;
+   height: 140px;
+   width: 140px;
+   /*border:2px solid var(--main-link-color);
+	background-color:var(--main-link-color);*/
+}
+
+.excerpt {
+   padding-bottom: 0px !important;
+}
+
+p.simple-nav {
+   color: var(--border-color)!important;
+}
+
+strong {
+   color: var(--header-color);
+}
+
+ul li {
+   list-style: circle;
+   margin-left: 20px;
+   padding-top:5px!important;
+}
+
+@media (max-width: 600px) {
+   /*div.columnOne, div.columnTwo {
+		width:100%!important;
+	}
+
+	div.columnOne {
+		border-bottom: 2px solid #AD002A;
+	}*/
+   p,
+   li,
+   a,
+   input,
+   span {
+      font-size: 14pt!important;
+   }
+   div.flip-box-front img {
+      width: 100% !important;
+   }
+}
+
+
+/*@media (max-width: 1200px) {
+
+	#top {
+		display: none;
+	}
+
+}*/
+
+@media (min-width: 600px) {
+   /*div.columnOne {
+	width:20%;
+	float:left;
+}
+
+div.columnTwo {
+	width:80%;
+}
+
+div.columnOne, div.columnTwo {
+	display: block;
+	position:relative;
+	padding: 5px;
+}*/
+   div.stuff span {
+      font-size: 14pt;
+   }
+   /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+   .flip-box {
+      background-color: var(--projects-background-color);
+      width: 510px;
+      height: 510px;
+      perspective: 2000px;
+      /* Remove this if you don't want the 3D effect */
+   }
+   div#links.pages a .flip-box {
+      width: 1100px;
+   }
+   /* This container is needed to position the front and back side */
+   .flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+   }
+   /* Do an horizontal flip when you move the mouse over the flip box container */
+   .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+   }
+   /* Position the front and back side */
+   .flip-box-front,
+   .flip-box-back {
+      border: 1px solid var(--main-link-color);
+      background-color: var(--text-background-color);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      /* Safari */
+      backface-visibility: hidden;
+   }
+   /* Style the front side */
+   .flip-box-front {
+      padding: 18px;
+   }
+   /* Style the back side */
+   .flip-box-back {
+      padding: 35px;
+      transform: rotateY(180deg);
+   }
+   span.green,
+   span.blue,
+   span.red,
+   span.purple,
+   span.black,
+   span.yellow {
+      font-size: 14pt;
+      letter-spacing: 3px;
+   }
+   #bottom {
+      display: none;
+   }
+   #links {
+      width: 1100px!important;
+   }
+   div#links a {
+      width: 326px;
+      /*width: 29.6984%;*/
+      float: left;
+      /*margin: 25px;*/
+      padding: 18px;
+      font-size: 14pt;
+      letter-spacing: 3px;
+      margin: 0 20px 40px 20px;
+   }
+   div#links.pages a {
+      width: 100%;
+      height: 510px;
+      padding: 0px !important;
+      border: none!important;
+   }
+   div#links.portfolio a {
+      width: 510px;
+      height: 510px;
+      padding: 0px !important;
+      border: none!important;
+   }
+   #top {
+      display: visible;
+      float: left;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 3px solid var(--border-color);
+      border-top: 3px solid var(--border-color);
+   }
+   div#title,
+   div.stuff {
+      width: 1060px!important;
+      margin: 0 auto!important;
+      padding: 0px;
+   }
+   div#title h1 {
+      /*font-size: 24pt;*/
+      padding: 14px;
+   }
+   /*div.stuff h4, div.stuff h3, div.stuff h2, div#title h1 {
+		font-size:24pt;
+	}*/
+   #status p.stuff,
+   #about p.stuff {
+      padding-left: 0px;
+      padding-right: 0px;
+   }
+   #status a.nav {
+      float: right;
+   }
+   #status {
+      float: left;
+   }
+   #about {
+      float: left;
+   }
+   div#links {
+      width: 510px !important;
+   }
+   div#links.portfolio {
+      width: 510px!important;
+   }
+   div#links.pages {
+      width: 510px!important;
+   }
+   div#links a {
+      width: 100%;
+      margin-right: 0px;
+      margin-left: 0px;
+   }
+   div#title,
+   div.stuff {
+      width: 510px!important;
+   }
+}
+
+@media (min-width:1200px) {
+   div#links {
+      width: 1100px !important;
+   }
+   div#links.portfolio {
+      width: 1100px!important;
+   }
+   div#links.pages {
+      width: 1100px!important;
+   }
+   div#links a {
+      width: 326px;
+      margin-right: 20px;
+      margin-left: 20px;
+   }
+   div#title,
+   div.stuff {
+      width: 1060px!important;
+   }
+   .columnTwo {
+      width: 70%;
+      display: inline-block;
+      position: relative;
+   }
+   .columnOne {
+      float: left;
+      padding-right: 20px;
+      width: 25%;
+   }
+}
+
+@media (prefers-color-scheme: dark) {
+   html {
+      --text-color: rgb(187, 187, 187);
+      --header-color: rgb(232, 230, 227);
+      --main-link-color: rgb(227, 57, 109);
+      --projects-background-color: rgb(24, 26, 27);
+      --text-background-color: rgb(29, 32, 33);
+      --heading-background-color: #181a1b;
+      --border-color: rgb(58, 62, 65);
+      --purple-link-color: rgb(103, 85, 230);
+      --green-link-color: rgb(9, 192, 181);
+      --highlight-color: white;
+   }
+}
+

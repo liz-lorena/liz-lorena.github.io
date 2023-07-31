@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5GSS1PWG3Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5GSS1PWG3Q');
+</script>
+ 
+        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="image" property="og:image" content="/img/sitewideimg.png">
+    <meta name="description" property="og:description" content="{{ site.description }}">
+    <meta name="title" property="og:title" content="{{ site.title }}">
+    <meta name="keywords" content="web developer, web designer, front end developer, irisoflys">
+    <meta name="author" content="{{ site.author_name }}">
+    <meta name="github" content="{{ site.username }}">
+    <meta property="og:type" content="website"> 
+    <meta property="og:url" content="https://irisoflys.com"> 
+
+    {{ page.meta }}
+  
+    <title>{{ site.title }} {{ page.title }}</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+   
+    <link href="/index.css" rel="stylesheet">
+    <link href="/cssreset.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon }}">
+
+    <script src="https://kit.fontawesome.com/56182aba27.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<div class="canvas">
+
+<div class="navigation">
+  <div class="logo" style="margin-top:2px;"><h1><a href="/">My&nbsp;Portfolio</a><span>&nbsp;&nbsp;<!--<span class="slash">/</span>&nbsp; Web&nbsp;Developer&nbsp;&nbsp;&nbsp;--><a id="theme-toggle" class="desktop" onclick="modeSwitcher()" style="padding:0px 30px 0px 0px;"></a></span></h1></div>
+  <i class="nav-toggle fa fa-2x fa-bars" aria-hidden="true" id="toggle-open"></i>
+    <div class="pages">
+      <div class="nav-mobile-header">
+        <h1 style="margin-top:2px;margin-bottom:10px!important;margin-left: -10px !important;">My&nbsp;Portfolio<!--<span style="text-transform:uppercase!important;font-weight:normal!important;">&nbsp;&nbsp;<span class="slash">/</span>&nbsp; --><!--Web&nbsp;Developer</span>--></h1>
+          <i class="nav-toggle fa fa-2x fa-close" aria-hidden="true" id="toggle-close"></i>
+        </div>
+        <a href="/">Home</a>
+        <a href="#about" id="read-more">About</a>
+        <a href="#projects">Projects</a>
+        <a href="/resume-iris-of-lys.pdf" target="_blank">Resume</a>
+        <a href="mailto:lys@irisoflys.com" target="_blank">Contact</a>
+    </div>
+</div>
+
+
+<div class="about">
+    
+<div class="behindcard">
+    <div class="card" id="about-me">
+        <img src="{{ site.logo }}">
+        <h1 style="line-height:120%;">
+          Iris&nbsp;of&nbsp;Lys
+        </h1>
+        <div class="divider"></div>
+        <span>Front&#8209;End<br> Web&nbsp;Developer</span>
+        <div class="socials">
+            <a href="https://github.com/irisoflys" target="_blank" title="Github"><i class="fab fa-github"></i></a> <a href="https://linkedin.com/in/irisoflys" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a> <a href="/links" title="Other Links" target="_blank"><i class="fas fa-link"></i></a>
+        </div>
+    </div>
+</div>
+<div class="business">
+    <div class="businesspiece">
+        <h3 class="greeting">{{content}}</h3>
+        <h4 class="intro" id="about">Here's who I am &amp; what I do</h4>
+        <div class="introbuttons"><a href="#projects" class="button One">Projects</a> &nbsp; <a href="/resume-iris-of-lys.pdf" target="_blank" class="button Two"><i class="fa fa-download" aria-hidden="true"></i>&nbsp; Resume</a></div>
+        <p>I'm a front-end web developer who's been coding since 2013. I graduated May 2019 from Rutgers University with a B.A. in Information Technology and Informatics, and I currently work full-time as a web producer for Amplity Health.</p>
+      <div id="text" class="hidden">
+        <p>Besides making websites, I also love learning languages. As a multilingual Cuban-American, I'm fluent in Spanish and English and have studied German since Middle School and French since High School. Some of my other interests are drawing and researching niche topics.</p>
+        <p>I love my family, my birds, and my fiancé. ♡</p>
+      </div>
+        <p id="less" class="hidden"><a><a><i class="fa fa-minus" aria-hidden="true" style="font-size: 15px;"></i>&nbsp; Show less</a></p>
+        <p id="more"><a><i class="fa fa-plus" aria-hidden="true" style="font-size: 15px;"></i>&nbsp; Show more</a></p>        
+    </div>
+</div>
+</div>
+
+
+<div class="projects" id="projects">  
+    <h2>Projects</h2>
+    <p class="intro">These are my favorite programming projects. Click to see the source code or visit the live version. All my projects are hosted on Github.</p>
+
+    
+{% for post in site.posts %}
+    
+    <div class="project">
+     <div class="projectDetails">
+     <div class="name">
+       <a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+     <p>{{ post.projectDate }}</p>
+     </div>
+     <p>{{ post.excerpt }}</p>
+     </div>
+     <div class="projectImage" style="background-image:url('/img/{{ post.img }}');background-color:{{ post.bgcolor }};"></div>
+    </div>    
+
+
+        {% endfor %} 
+  
+    <p style="padding-top:50px!important;text-align:center;clear:both;">©&nbsp;{{ site.time | date: '%Y' }} Iris of Lys</p>
+</div>
+
+</div>
+
+<script src="/mode-switcher.js"></script>
+<script src="/mobile-menu.js"></script>
+<script src="/showAboutMe.js"></script>
+  
+</body>
+</html>
