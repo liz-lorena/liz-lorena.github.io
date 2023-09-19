@@ -94,6 +94,17 @@ a.button {
 	transition: all .3s;
 }
 
+a {
+	color: var(--text-color);
+	text-transform:uppercase;
+	transition:all .3s;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration:none;
+	color: var(--accent-color);
+}
+
 a.button:hover,
 a:hover,
 a.button:active,
