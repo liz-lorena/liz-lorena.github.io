@@ -96,7 +96,6 @@ a.button {
 
 a {
 	color: var(--text-color);
-	text-transform:uppercase;
 	transition:all .3s;
 }
 
