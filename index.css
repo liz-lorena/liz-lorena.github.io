@@ -292,7 +292,8 @@ div.name a:active,
 .contact a:hover,
 .pages a:active,
 .mobile-navigation a:active,
-.contact a:active {
+.contact a:active,
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 	color: var(--accent-color)!important;
 	text-decoration: none;
 }
