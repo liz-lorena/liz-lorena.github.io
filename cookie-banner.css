@@ -125,18 +125,19 @@ display:none;
   }
 }
 .cc_container {
-  background:#fff;
+  /**background:#fff;
   color:#999;
   font-size:17px;
-  font-family:"Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  font-family:"Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;**/
   box-sizing:border-box;
   border:1px solid #ccc
 }
-.cc_container ::-moz-selection {
+/*.cc_container ::-moz-selection {
   background:#ff5e99;
   color:#fff;
   text-shadow:none
-}
+}*/
+
 .cc_container .cc_btn,
 .cc_container .cc_btn:visited {
   color:#000;
