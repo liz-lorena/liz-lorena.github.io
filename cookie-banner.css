@@ -120,10 +120,15 @@ display:none;
     font-size:1em
   }
 }
+
+.cc_container p {
+color:#000!important;  
+}
+
 .cc_container {
   background:#fff;
-  color:#000!important;
-  /**font-size:17px;
+  /**color:#000!important;
+  font-size:17px;
   font-family:"Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;**/
   box-sizing:border-box;
   border:1px solid #ccc
