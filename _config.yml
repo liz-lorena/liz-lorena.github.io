@@ -11,8 +11,8 @@ baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
 permalink:          /projects/:title # Post permalink
 timezone:           America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 language:           en-US
-favicon:            /img/sitewideimg-brown.png
-logo:               /img/sitewideimg-brown.png 
+favicon:            /img/sitewideimg.jpg
+logo:               /img/sitewideimg.jpg 
 
 # Pagination Settings
 paginate_path: "/pg-:num/"
