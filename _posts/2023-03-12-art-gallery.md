@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gallery
+title: Simple Gallery Template
 projectDate: MAR 2023
 role: Web Development and Design
 img: art-gallery.png
