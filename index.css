@@ -140,15 +140,15 @@ a.button.Two:hover {
 
 div.name a {
 	color: var(--accent-color)!important;
-	font-size: 20px!important;
 	display: block;
-	padding-bottom: 3px;
 	line-height: 140%!important;
 	transition: all .3s;
 }
 
 div.name a.projectTitle {
-	font-weight:bold!important;		
+	font-weight:bold!important;	
+	font-size:20px!important;	
+	padding-bottom: 3px;
 }
 
 .business p a {
