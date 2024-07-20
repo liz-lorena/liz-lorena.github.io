@@ -676,10 +676,10 @@ html[data-theme="light"] {
 	--owl: whitesmoke;
 	--text-color: #000000;
 	--accent-color: #7926DC;
-	--card-color: #DEEEE4;
+	--card-color: #DEE4EE;
 	--white-color: whitesmoke;
-	--bg-color: #DEEEE4;
-	--shadows: rgba(125, 138, 124, 0.23);
+	--bg-color: #DEE4EE;
+	--shadows: rgba(124, 124, 138, 0.23);
 }
 
 html[data-theme="dark"] {
@@ -707,10 +707,10 @@ html[data-theme="dark"] {
 		--owl: whitesmoke;
 		--text-color: #000000;
 		--accent-color: #7926DC;
-		--card-color: #DEEEE4;
+		--card-color: #DEE4EE;
 		--white-color: whitesmoke;
-		--bg-color: #DEEEE4;
-		--shadows: rgba(125, 138, 124, 0.23);
+		--bg-color: #DEE4EE;
+		--shadows: rgba(124, 124, 138, 0.23);
 	}
 }
 
