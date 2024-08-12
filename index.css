@@ -369,12 +369,10 @@ div.introbuttons {
 	width: 100%;
 }
 
-div.spacer {
-	height:50px;
-}
+
 
 div.project {
-	/*margin-top: 50px;*/
+	margin-top: 50px;
 	width: 750px;
 	height: 404px;
 	margin-left: auto;
