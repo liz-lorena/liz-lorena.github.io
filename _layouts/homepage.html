@@ -90,10 +90,9 @@
 
 
 <div class="projects" id="projects" uk-scrollspy="cls:uk-animation-slide-left; target: .project; delay: 400;">  
-  <div uk-scrollspy="cls:uk-animation-slide-top;">  
   <h2>Projects</h2>
     <p class="intro">These are my favorite completed programming projects. Click to see the source code or visit the live version. All these projects are hosted on Github.</p>
-  </div>
+  
     
 {% for post in site.posts %}
   
@@ -112,10 +111,9 @@
 
         {% endfor %} 
 
-  <div uk-scrollspy="cls:uk-animation-slide-bottom;">
     <p style="padding-top:50px!important;text-align:center;clear:both;">©&nbsp;{{ site.time | date: '%Y' }} Liz Lorena</p>
     <p style="padding-top:20px!important;text-align:center;clear:both;"><a onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Back to Top &nbsp;<i class="fas fa-arrow-up"></i></a></p>
-  </div>
+  
 </div>
 
 </div>
