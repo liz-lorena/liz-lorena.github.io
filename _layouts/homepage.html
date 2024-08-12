@@ -43,7 +43,7 @@
 
 <div class="canvas">
 
-<div class="navigation">
+<div class="navigation" uk-scrollspy="cls:uk-animation-slide-top;">
   <div class="logo" style="margin-top:2px;"><h1><a href="/">Liz&nbsp;Lorena's Portfolio</a><span>&nbsp;&nbsp;<!--<span class="slash">/</span>&nbsp; Web&nbsp;Developer&nbsp;&nbsp;&nbsp;--><a id="theme-toggle" class="desktop" onclick="modeSwitcher()" style="padding:0px 30px 0px 0px;"></a></span></h1></div>
   <i class="nav-toggle fa fa-2x fa-bars" aria-hidden="true" id="toggle-open"></i>
     <div class="pages">
@@ -63,7 +63,7 @@
 <div class="about">
     
 <div class="behindcard">
-    <div class="card uk-animation-slide-top" id="about-me">
+    <div class="card" id="about-me" uk-scrollspy="cls:uk-animation-slide-top;">
         <img src="{{ site.logo }}">
         <h1 style="line-height:120%;">
           Liz&nbsp;Lorena
@@ -76,7 +76,7 @@
     </div>
 </div>
 <div class="business">
-    <div class="businesspiece uk-animation-slide-right">
+    <div class="businesspiece" uk-scrollspy="cls:uk-animation-slide-right;">
         <h3 class="greeting">Hello!</h3>
         <h4 class="intro" id="about">Read all about Liz below</h4>
         <div class="introbuttons"><a href="#projects" class="button One">Projects</a> &nbsp; <a href="/resume-lizlorena.com.pdf" target="_blank" class="button Two" download><i class="fa fa-download" aria-hidden="true"></i>&nbsp; Resume</a></div>
