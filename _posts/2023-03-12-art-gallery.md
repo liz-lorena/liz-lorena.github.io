@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simple Gallery Template
-projectDate: MAR 2023
+projectDate: "MAR&nbsp;2023"
 role: Web Development and Design
 img: art-gallery.png
 bgcolor: "#A998D9"
