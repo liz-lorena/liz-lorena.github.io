@@ -11,7 +11,7 @@
 	background: var(--card-color);
 }
 
-body {
+body, html {
 	background-color: var(--bg-color);
 }
 
