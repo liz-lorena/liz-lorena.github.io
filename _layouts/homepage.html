@@ -82,7 +82,7 @@
         <div class="introbuttons"><a href="#projects" class="button One">Projects</a> &nbsp; <a href="/resume-lizlorena.com.pdf" target="_blank" class="button Two" download><i class="fa fa-download" aria-hidden="true"></i>&nbsp; Resume</a></div>
         {{content}}
       </div>
-        <p id="less" class="hidden uk-animation-slide-top"><a><a><i class="fa fa-minus" aria-hidden="true" style="font-size: 15px;"></i>&nbsp; Read less</a></p>
+        <p id="less" class="hidden"><a><a><i class="fa fa-minus" aria-hidden="true" style="font-size: 15px;"></i>&nbsp; Read less</a></p>
         <p id="more"><a><i class="fa fa-plus" aria-hidden="true" style="font-size: 15px;"></i>&nbsp; Read more</a></p>        
     </div>
 </div>
@@ -90,9 +90,10 @@
 
 
 <div class="projects" id="projects" uk-scrollspy="cls:uk-animation-slide-left; target: .project; delay: 400;">  
-    <h2 uk-scrollspy="cls:uk-animation-slide-top;">Projects</h2>
-    <p class="intro" uk-scrollspy="cls:uk-animation-slide-top;">These are my favorite completed programming projects. Click to see the source code or visit the live version. All these projects are hosted on Github.</p>
-
+  <div uk-scrollspy="cls:uk-animation-slide-top;">  
+  <h2>Projects</h2>
+    <p class="intro">These are my favorite completed programming projects. Click to see the source code or visit the live version. All these projects are hosted on Github.</p>
+  </div>
     
 {% for post in site.posts %}
   
@@ -110,9 +111,11 @@
 
 
         {% endfor %} 
-  
-    <p style="padding-top:50px!important;text-align:center;clear:both;" uk-scrollspy="cls:uk-animation-slide-bottom;">©&nbsp;{{ site.time | date: '%Y' }} Liz Lorena</p>
-    <p style="padding-top:20px!important;text-align:center;clear:both;" uk-scrollspy="cls:uk-animation-slide-bottom;"><a onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Back to Top &nbsp;<i class="fas fa-arrow-up"></i></a></p>
+
+  <div uk-scrollspy="cls:uk-animation-slide-bottom;">
+    <p style="padding-top:50px!important;text-align:center;clear:both;">©&nbsp;{{ site.time | date: '%Y' }} Liz Lorena</p>
+    <p style="padding-top:20px!important;text-align:center;clear:both;"><a onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Back to Top &nbsp;<i class="fas fa-arrow-up"></i></a></p>
+  </div>
 </div>
 
 </div>
