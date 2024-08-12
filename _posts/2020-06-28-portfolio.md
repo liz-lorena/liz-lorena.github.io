@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Portfolio Websites
-projectDate: DEC 2016 – MAY 2021
+projectDate: "DEC&nbsp;2016 – MAY&nbsp;2021"
 role: Web Development and Design
 img: portfolio-2024.png
 bgcolor: "#B6C3B9"
