@@ -678,9 +678,9 @@ html[data-theme="light"] {
 	--owl: whitesmoke;
 	--text-color: #000000;
 	--accent-color: #7926DC;
-	--card-color: #DEE4EE;
+	--card-color: #deeee4;
 	--white-color: whitesmoke;
-	--bg-color: #DEE4EE;
+	--bg-color: #deeee4;
 	--shadows: rgba(124, 124, 138, 0.23);
 }
 
@@ -709,9 +709,9 @@ html[data-theme="dark"] {
 		--owl: whitesmoke;
 		--text-color: #000000;
 		--accent-color: #7926DC;
-		--card-color: #DEE4EE;
+		--card-color: #deeee4;
 		--white-color: whitesmoke;
-		--bg-color: #DEE4EE;
+		--bg-color: #deeee4;
 		--shadows: rgba(124, 124, 138, 0.23);
 	}
 }
