@@ -2,13 +2,13 @@
 
 ::-moz-selection {
 	/* Code for Firefox */
-	color: var(--accent-color);
-	background: var(--card-color);
+	color: var(--card-color);
+	background: var(--accent-color);
 }
 
 ::selection {
-	color: var(--accent-color);
-	background: var(--card-color);
+	color: var(--card-color);
+	background: var(--accent-color);
 }
 
 body, html {
