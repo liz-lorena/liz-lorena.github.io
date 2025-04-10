@@ -1,10 +1,10 @@
 # Site Info
-title:              "Portfolio of Liz Lorena"
-description:        "Liz Lorena is a professional front-end web developer who has been coding since 2013."
+title:              "Portfolio of Liz Berberena"
+description:        "Liz is a professional front-end web developer who has been coding since 2013."
 
 # Author Info
-author_name:        Liz Lorena
-username:           liz-lorena
+author_name:        Liz Berberena
+username:           lizberberena
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
